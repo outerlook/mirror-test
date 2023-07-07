@@ -16,6 +16,7 @@ jobs:
           fetch-depth: 0
       - uses: usherlabs/monorepo-package-mirror-action@main
         with:
-          target_repo_url: https://github.com/outerlook/mirror-test-dest.git
+#          target_repo_url: https://github.com/outerlook/mirror-test-dest.git
+          target_repo_url: git@github.com:outerlook/mirror-test-dest.git
           main_branch: master
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
